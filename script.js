@@ -1,8 +1,11 @@
 //your JS code here. If required.
 function secindHighest(arr){
-	if(arr.length<=1 || new Set(arr).size === 1){
+	if (arr.length < 2){
 		return -Infinity;
 	}
-	arr.sort((a,b)=>b-a);
+	arr.sort((a, b) => b - a);
+	if (arr[0] === arr[1]){
+		return -Infinity;
+	}
 	return arr[1];
 }
