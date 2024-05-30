@@ -1,5 +1,5 @@
 //your JS code here. If required.
-function secindHighest(arr){
+function secondHighest(arr){
 	if (arr.length < 2){
 		return -Infinity;
 	}
